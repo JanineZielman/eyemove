@@ -1,0 +1,17 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "text_block",
+    "items": [],
+    "primary": {
+      "text": [
+        {
+          "type": "paragraph",
+          "text": "Dolore proident officia pariatur. Laborum ut cillum eiusmod dolor irure commodo id fugiat. Id nulla nulla excepteur Lorem tempor dolore nulla voluptate.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "id": "6eaadc06-b606-4a2b-a96e-b98b1712011a",
+  "uid": "in-qui-illum",
+  "type": "menu",
+  "data": {
+    "test": [
+      {
+        "type": "paragraph",
+        "text": "Aliquip et mollit commodo id duis magna eiusmod ipsum eu ad.",
+        "spans": []
+      }
+    ],
+    "menu_links": [
+      {
+        "label": [
+          {
+            "type": "paragraph",
+            "text": "Amet irure et labore culpa laboris qui ipsum ut et reprehenderit ullamco id dolore voluptate eiusmod. Consequat minim irure incididunt ut ipsum duis exercitation tempor eu non.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "label": [
+          {
+            "type": "paragraph",
+            "text": "Enim eiusmod officia excepteur in et voluptate laborum deserunt cupidatat sint est. Id est duis deserunt fugiat exercitation qui ea sit nisi ipsum officia deserunt sint ut.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "label": [
+          {
+            "type": "paragraph",
+            "text": "Ullamco cupidatat qui dolor et.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      }
+    ]
+  }
+}

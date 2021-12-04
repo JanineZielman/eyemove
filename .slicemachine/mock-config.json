@@ -1,0 +1,74 @@
+{
+  "slices": {
+    "Table": {},
+    "Contact": {
+      "default-slice": {
+        "primary": {}
+      }
+    }
+  },
+  "_cts": {
+    "page": {},
+    "menu": {},
+    "footer": {
+      "columns": {
+        "column": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        }
+      }
+    },
+    "table": {
+      "tableTitles": {
+        "title1": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        },
+        "title3": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        },
+        "title2": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        }
+      }
+    },
+    "info": {
+      "text": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "tableRow": {
+        "field1": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        },
+        "field2": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        },
+        "field3": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        }
+      }
+    }
+  }
+}

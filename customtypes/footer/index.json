@@ -1,0 +1,28 @@
+{
+  "id": "footer",
+  "label": "Footer",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "columns": {
+        "config": {
+          "label": "Columns",
+          "placeholder": "",
+          "fields": {
+            "column": {
+              "config": {
+                "label": "Column",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              },
+              "type": "StructuredText"
+            }
+          }
+        },
+        "type": "Group"
+      }
+    }
+  }
+}

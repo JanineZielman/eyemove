@@ -1,0 +1,36 @@
+{
+  "id": "b8f2da71-22b3-49e5-ad07-83c6f9b8b09b",
+  "uid": "in-et-voluptatibus",
+  "type": "footer",
+  "data": {
+    "columns": [
+      {
+        "column": [
+          {
+            "type": "paragraph",
+            "text": "Mollit labore laboris nisi ullamco anim ullamco ex duis do proident mollit duis fugiat. Exercitation aute deserunt deserunt.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "type": "paragraph",
+            "text": "Ut tempor pariatur do. Veniam dolore ex adipisicing. Nisi ex aliqua cupidatat enim culpa est et.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "type": "paragraph",
+            "text": "Irure elit sint sunt officia laborum deserunt voluptate veniam aliqua ut.",
+            "spans": []
+          }
+        ]
+      }
+    ]
+  }
+}

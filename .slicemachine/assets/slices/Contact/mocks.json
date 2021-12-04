@@ -1,0 +1,17 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "contact",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Enhance enterprise web services",
+          "spans": []
+        }
+      ]
+    }
+  }
+]
