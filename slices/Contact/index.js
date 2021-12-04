@@ -2,7 +2,7 @@ import React from 'react'
 import { RichText } from 'prismic-reactjs'
 
 const Contact = ({ slice }) => (
-  <section className="contact">
+  <section className="contact container">
     <span className="title">
       {
         slice.primary.title ?
@@ -12,11 +12,11 @@ const Contact = ({ slice }) => (
     </span>
     <div className="columns">
       <div className="column">
-        <div className="mapouter">
-          <div className="gmap_canvas">
-            <iframe id="gmap_canvas" src={`https://maps.google.com/maps?q=junoplein%2034&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed`} frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe width="100%" height="100%" id="gmap_canvas" src={`https://maps.google.com/maps?q=eyemove%20bemmel&t=&z=14&ie=UTF8&iwloc=&output=embed`} frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"/>
           </div>
-        </div> 
+        </div>
       </div>
       <div className="column">
         <form action="mailto:winekesalemink@gmail.com?Subject=Nieuwe%20afspraak" method="post" encType="text/plain">

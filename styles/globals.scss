@@ -27,6 +27,9 @@ p{
 
 a {
   color: inherit;
+  &:hover{
+    color: #095463;
+  }
 }
 
 img{
@@ -49,17 +52,20 @@ img{
     background-color: #B8F2F7;
   }
   .container{
-    padding: 48px 0;
+    padding: 90px 0;
   }
 }
 
 header{
-  position: absolute;
+  position: fixed;
+  z-index: 999;
   top: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 14px 20px;
+  padding: 8px 20px;
+  align-items: center;
+  background-color: #B8F2F7;
   nav{
     ul{
       justify-content: flex-end;
@@ -67,7 +73,7 @@ header{
   }
   .logo{
     img{
-      width: 70px;
+      width: 55px;
       height: auto;
     }
   }
@@ -171,6 +177,9 @@ table{
   }
 }
 
+.mapouter{position:relative;text-align:right;height:100%;width:100%;}
+.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}
+
 .contact{
   padding: 48px 20px;
   text-align: center;
@@ -179,9 +188,10 @@ table{
     display: flex;
     .column{
       width: 50%;
+      padding: 10px;
       text-align: left;
       form{
-        width: 90%;
+        width: 95%;
         display: block;
         margin: auto;
         label, input, textarea{
@@ -204,12 +214,89 @@ table{
 }
 
 @media screen and (max-width: 950px) {
+  h1{
+    font-size: 28px;
+  }
+  
+  h3{
+    font-size: 20px;
+  }
+  
+  p{
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .page{
+    margin-top: 80px;
+    padding: 10px;
+  }
+  .hero-txt{
+    width: 95%;
+    margin: auto;
+    h1{
+      font-size: 22px;
+    }
+  }
+  div.text-block{
+    padding: 0 10px;
+  }
+  .home .container{
+    padding: 45px 0px;
+  }
+  nav{
+    width: 100%;
+    ul{
+      margin: 0;
+      padding: 0;
+      li{
+        margin: 0 10px;
+      }
+    }
+    a{
+      font-size: 16px;
+    }
+  }
+  header{
+    display: flex;
+    padding: 10px 10px;
+    .logo{
+      img{
+        width: 50px;
+      }
+    }
+  }
   .container{
     display: block;
     margin: auto;
-    width: 90%;
+    width: 100%;
     .column{
       width: 100%;
     }
   }  
+  .two-columns{
+    .container{
+      display: block;
+      margin: auto;
+      width: 90%;
+      .column{
+        width: 100%;
+      }
+    }  
+  }
+  table{
+    font-size: 0.9em;
+  }
+  .contact, footer{
+    .columns{
+      display: block;
+      .column{
+        width: 100%;
+        margin-bottom: 14px;
+        padding: 5px 10px;
+      }
+    }
+  }
+  .contact{
+    padding: 0;
+  }
 }
