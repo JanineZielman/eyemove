@@ -23,7 +23,7 @@ const Links = ({ menuLinks }) => {
         <ul>
           {menuLinks.map((menuLink, index) => (
             <li key={`menulink-${index}`}>
-              <a href={Link.url(menuLink.link.url)}>
+              <a href={menuLink.link.uid}>
                 {RichText.asText(menuLink.label)}
               </a>
             </li>
