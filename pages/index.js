@@ -9,7 +9,7 @@ import Layout from '../components/Layout'
 const Page = ({slices, menu, footer}) => {
   return(
     <Layout menu={menu} footer={footer}>
-      <section class="home">
+      <section className="home">
         <SliceZone slices={slices} resolver={resolver} />
       </section>
     </Layout>
