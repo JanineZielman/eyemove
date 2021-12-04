@@ -1,5 +1,5 @@
 import React from "react";
-import { RichText, Link } from "prismic-reactjs";
+import { RichText} from "prismic-reactjs";
 
 const Footer = ({ footerData, menuLinks }) => {
   return(
