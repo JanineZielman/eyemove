@@ -1,8 +1,8 @@
 {
-  "apiEndpoint": "https://eyemove.cdn.prismic.io/api/v2",
+  "_latest": "0.3.6",
+  "apiEndpoint": "https://eyemove.prismic.io/api/v2",
+  "localSliceSimulatorURL": "http://localhost:3000/slice-simulator",
   "libraries": [
     "@/slices"
-  ],
-  "_latest": "0.1.0",
-  "storybook": "http://localhost:8888"
+  ]
 }

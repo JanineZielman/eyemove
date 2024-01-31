@@ -1,44 +1,50 @@
-import Prismic from '@prismicio/client'
-import SliceZone from "next-slicezone";
-import { useGetStaticProps, useGetStaticPaths } from "next-slicezone/hooks";
-import { RichText } from 'prismic-reactjs'
-import resolver from "../sm-resolver.js";
-import { Client } from "../prismic-configuration";
+import { SliceZone } from "@prismicio/react";
+import { components } from "../slices";
+import * as prismicH from "@prismicio/helpers";
+import Head from "next/head";
 
-import Layout from '../components/Layout'
+import { createClient } from "../prismicio";
+import Layout from "../components/Layout";
 
-const Page = ({slices, menu, footer}) => {
+const Page = ({page, menu, footer}) => {
   return (
     <Layout menu={menu} footer={footer}>
       <section className="page">
-        <SliceZone slices={slices} resolver={resolver} />
+        <SliceZone slices={page.data.slices} components={components} />
       </section>
     </Layout>
   )
 }
 
-// Fetch content from prismic
-export const getStaticProps = useGetStaticProps({
-  client: Client(),
-  queryType: 'repeat',
-  type: 'page',
-  apiParams({ params }) {
-    return {
-      uid: params.uid
-    }
-  }
-});
+export async function getStaticProps({ params, previewData }) {
+  const client = createClient({ previewData });
 
-export const getStaticPaths = useGetStaticPaths({
-  client: Client(),
-  type: 'page',
-  formatPath: (prismicDocument) => {
-    return {
-      params: {
-        uid: prismicDocument.uid
-      }
-    }
-  }
-});
+  const page = await client.getByUID("page", params.uid);
+  const menu = await client.getSingle("menu");
+  const footer = await client.getSingle("footer");
+
+  return {
+    props: {
+      page,
+      menu,
+      footer
+    },
+  };
+}
 
 export default Page;
+
+export async function getStaticPaths() {
+  const client = createClient();
+
+  const pages = await client.getAllByType("page");
+
+  return {
+    paths: pages.map((page) => {
+      return {
+        params: { uid: page.uid }
+      };
+    }),
+    fallback: false,
+  };
+}

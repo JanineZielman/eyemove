@@ -1,26 +1,18 @@
-// pages/_document.js
-import Document, { Html, Head, Main, NextScript } from "next/document";
-import { createResolver } from "next-slicezone/resolver";
+import { Html, Head, Main, NextScript } from "next/document";
 
-export default class extends Document {
-  static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx);
-    await createResolver();
-    return { ...initialProps };
-  }
-  
-  render() {
-    return (
-      <Html>
-         <Head>
-          <link href="/fonts/style.css" rel="stylesheet"/>
-        </Head>
-
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    );
-  }
-};
+export default function Document() {
+  return (
+    <Html>
+      <Head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/favivon.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png"/>
+        <link rel="stylesheet" href="/fonts/style.css"/>
+      </Head>
+      <body className="overflow-x-hidden antialiased">
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
+  );
+}

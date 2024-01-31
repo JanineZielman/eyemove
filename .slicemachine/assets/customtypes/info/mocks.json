@@ -1,130 +1,100 @@
 {
-  "id": "cdeca87d-cbf8-4427-9b43-6250e8a4cd91",
-  "uid": "dicta-tenetur-corrupti",
-  "type": "info",
-  "data": {
-    "text": [
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "new"
+  },
+  "text": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
       {
         "type": "paragraph",
-        "text": "Minim esse culpa sit exercitation in non ut. Pariatur laboris ex laboris labore labore ut proident ut minim do incididunt anim aute sit.",
-        "spans": []
+        "content": {
+          "text": "Laborum anim id ex dolore mollit pariatur incididunt adipisicing incididunt sint commodo nisi fugiat irure. Velit commodo consequat enim deserunt quis."
+        }
       }
-    ],
-    "tableRow": [
+    ]
+  },
+  "tableRow": {
+    "__TYPE__": "GroupContentType",
+    "value": [
       {
-        "field1": [
-          {
-            "type": "paragraph",
-            "text": "Labore sit culpa duis nulla labore culpa anim. Cupidatat non duis dolore sunt qui sunt magna. Exercitation aliquip esse veniam.",
-            "spans": []
-          }
-        ],
-        "field2": [
-          {
-            "type": "paragraph",
-            "text": "Veniam Lorem proident et minim laborum velit et pariatur dolor tempor nulla elit. Voluptate ex aliqua laboris nulla ex qui nostrud ut esse incididunt excepteur consectetur irure.",
-            "spans": []
-          }
-        ],
-        "field3": [
-          {
-            "type": "paragraph",
-            "text": "Aliquip et in quis sit. Officia ipsum sint fugiat et ea nulla exercitation. Labore exercitation nostrud Lorem quis mollit.",
-            "spans": []
-          }
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "field1",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Nulla elit qui pariatur cupidatat adipisicing commodo ullamco esse culpa. Ea reprehenderit exercitation eu esse est labore quis irure eiusmod mollit Lorem qui. Enim adipisicing officia duis cupidatat deserunt adipisicing mollit nisi qui laboris in anim minim aliquip."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "field2",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Lorem eiusmod laboris laborum exercitation ullamco esse laborum velit. Dolor ullamco adipisicing cillum aliqua nulla do eiusmod tempor. Reprehenderit deserunt magna anim in et do cupidatat ea."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "field3",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Eiusmod laboris amet deserunt reprehenderit ex velit dolore est non nisi nulla veniam officia excepteur. Adipisicing veniam non aliqua pariatur adipisicing anim. Ut aliquip est exercitation sit id sit ex laboris culpa."
+                  }
+                }
+              ]
+            }
+          ]
         ]
-      },
+      }
+    ]
+  },
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
       {
-        "field1": [
-          {
-            "type": "paragraph",
-            "text": "Anim fugiat ex aliqua pariatur. Cillum proident anim exercitation officia non. Adipisicing ut duis est aute excepteur proident incididunt pariatur elit laboris magna officia ut.",
-            "spans": []
-          }
-        ],
-        "field2": [
-          {
-            "type": "paragraph",
-            "text": "Sunt tempor enim veniam irure. Non quis quis id ex mollit in minim magna.",
-            "spans": []
-          }
-        ],
-        "field3": [
-          {
-            "type": "paragraph",
-            "text": "Veniam cupidatat mollit mollit eiusmod Lorem adipisicing deserunt ex est Lorem qui cillum magna. Nulla id laboris et sit aliqua exercitation commodo. Officia adipisicing ea aliquip non Lorem consectetur.",
-            "spans": []
-          }
-        ]
-      },
-      {
-        "field1": [
-          {
-            "type": "paragraph",
-            "text": "Fugiat velit esse culpa. Aliqua qui enim ut adipisicing elit veniam ad aute sit aliquip laboris officia.",
-            "spans": []
-          }
-        ],
-        "field2": [
-          {
-            "type": "paragraph",
-            "text": "Minim est esse adipisicing nulla Lorem culpa magna exercitation labore ad aliqua enim anim eiusmod. Id et in nulla eiusmod aute culpa deserunt. Pariatur sunt cupidatat amet adipisicing sit adipisicing fugiat est eu.",
-            "spans": []
-          }
-        ],
-        "field3": [
-          {
-            "type": "paragraph",
-            "text": "Dolor sint culpa pariatur sunt nulla ullamco. Velit eiusmod reprehenderit sit cupidatat aute cillum pariatur do in pariatur. Sint proident id mollit dolore ipsum sunt irure tempor occaecat minim elit veniam.",
-            "spans": []
-          }
-        ]
-      },
-      {
-        "field1": [
-          {
-            "type": "paragraph",
-            "text": "Est labore et ullamco magna ullamco nostrud dolor nisi minim aute. Et duis velit eu labore eiusmod veniam.",
-            "spans": []
-          }
-        ],
-        "field2": [
-          {
-            "type": "paragraph",
-            "text": "Qui duis reprehenderit ea enim culpa veniam aliquip nostrud irure laboris aliquip.",
-            "spans": []
-          }
-        ],
-        "field3": [
-          {
-            "type": "paragraph",
-            "text": "Qui dolore esse veniam nostrud voluptate eu eu commodo elit cillum exercitation. Fugiat ut dolor irure in fugiat aliquip qui minim anim enim magna mollit mollit.",
-            "spans": []
-          }
-        ]
-      },
-      {
-        "field1": [
-          {
-            "type": "paragraph",
-            "text": "Pariatur fugiat cillum commodo voluptate voluptate nisi. Proident laboris amet laboris veniam laborum nostrud velit laborum qui excepteur irure consequat. Tempor occaecat esse ut aute excepteur sint enim ut nostrud reprehenderit cillum nisi.",
-            "spans": []
-          }
-        ],
-        "field2": [
-          {
-            "type": "paragraph",
-            "text": "Lorem exercitation labore esse eu est id non commodo. Deserunt velit commodo enim in consequat Lorem occaecat non excepteur ipsum voluptate.",
-            "spans": []
-          }
-        ],
-        "field3": [
-          {
-            "type": "paragraph",
-            "text": "Anim irure est deserunt. Do tempor irure ut. Aliqua do proident pariatur ut nulla laborum ad minim.",
-            "spans": []
-          }
-        ]
+        "key": "text_block$5ff3fc9e-0be5-485e-9ab1-0659fc8058ff",
+        "name": "text_block",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default-slice",
+          "primary": {
+            "text": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Aute ad excepteur amet irure pariatur ut id irure laboris Lorem officia ullamco."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
       }
     ]
   }

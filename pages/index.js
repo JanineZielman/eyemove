@@ -1,29 +1,38 @@
-import Prismic from '@prismicio/client'
-import SliceZone from "next-slicezone";
-import { useGetStaticProps } from "next-slicezone/hooks";
-import resolver from "../sm-resolver.js";
-import { Client } from "../prismic-configuration";
+import { SliceZone } from "@prismicio/react";
+import { components } from "../slices";
+import * as prismicH from "@prismicio/helpers";
+import Head from "next/head";
 
-import Layout from '../components/Layout'
+import { createClient } from "../prismicio";
+import Layout from "../components/Layout";
 
-const Page = ({slices, menu, footer}) => {
+
+const Page = ({page, menu, footer}) => {
   return(
     <Layout menu={menu} footer={footer}>
       <section className="home">
-        <SliceZone slices={slices} resolver={resolver} />
+        <SliceZone slices={page.data.slices} components={components}/>
       </section>
     </Layout>
   );
 }
 
-// Fetch content from prismic
-export const getStaticProps = useGetStaticProps({
-  client: Client(),
-  type: 'page',
-  queryType: 'repeat',
-  apiParams: {
-    uid: 'home'
-  }
-});
-
 export default Page;
+
+export async function getStaticProps({ previewData }) {
+  const client = createClient({ previewData });
+
+
+  const menu = await client.getSingle("menu");
+  const footer = await client.getSingle("footer");
+  const page = await client.getByUID("page", "home");
+
+
+  return {
+    props: {
+      menu,
+      page,
+      footer
+    },
+  };
+}

@@ -1,12 +1,13 @@
-import Prismic from '@prismicio/client'
-import SliceZone from "next-slicezone";
-import { RichText } from 'prismic-reactjs'
-import resolver from "../../sm-resolver";
-import { Client } from "../../prismic-configuration";
+import { SliceZone } from "@prismicio/react";
+import { components } from "../../slices";
+import * as prismicH from "@prismicio/helpers";
+import Head from "next/head";
 
-import Layout from '../../components/Layout'
+import { createClient } from "../../prismicio";
+import Layout from "../../components/Layout";
+import { RichText } from "prismic-reactjs";
 
-const InfoPage = ({infoData, slices, menu, footer}) => {
+const InfoPage = ({infoData, menu, footer}) => {
   return (
     <Layout menu={menu} footer={footer}>
       <section className="page">
@@ -23,24 +24,28 @@ const InfoPage = ({infoData, slices, menu, footer}) => {
 							))}
 						</tbody>
 					</table>
-					<SliceZone slices={slices} resolver={resolver} />
+					<SliceZone slices={infoData.data.slices} components={components} />
 				</div>
       </section>
     </Layout>
   )
 }
 
-// Fetch content from prismic
-export async function getStaticProps() {
+export default InfoPage;
 
-  const infoData = await Client().getSingle("info") || {}
+export async function getStaticProps({ previewData }) {
+  const client = createClient({ previewData });
+
+  const menu = await client.getSingle("menu");
+	const footer = await client.getSingle("footer");
+  const infoData = await client.getSingle("info");
+
 
   return {
     props: {
-      infoData: infoData,
-			slices: infoData.data.slices,
-    }
-  }
+      menu,
+      footer,
+      infoData
+    },
+  };
 }
-
-export default InfoPage;

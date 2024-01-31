@@ -1,75 +1,210 @@
 {
-  "id": "35057599-8192-42a5-b2a1-425a8fbdf02f",
-  "uid": "minima-maiores-dolores",
-  "type": "page",
-  "data": {
-    "meta_title": "iterate next-generation e-business",
-    "meta_description": "visualize dot-com interfaces",
-    "social_cards": [
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "social"
+  },
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
       {
-        "social_card_image": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
+        "key": "two_columns$16595a36-5978-45d1-98d0-613ccf986dfe",
+        "name": "two_columns",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default-slice",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Period"
+                  }
+                }
+              ]
+            },
+            "text": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Qui et dolore Lorem enim laborum aute pariatur adipisicing nisi sit mollit nisi."
+                  }
+                }
+              ]
+            }
           },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=900&h=500&fit=crop"
-        },
-        "social_card_title": "synergize interactive action-items",
-        "social_card_description": "engineer cutting-edge platforms"
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
       },
       {
-        "social_card_image": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
+        "key": "hero$36c4c4d0-7126-4c67-9caf-6465bacbad00",
+        "name": "hero",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default-slice",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Necessary"
+                  }
+                }
+              ]
+            },
+            "image": {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa",
+                "width": 2747,
+                "height": 4120
+              },
+              "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa",
+              "width": 2747,
+              "height": 4120,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            }
           },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
-        },
-        "social_card_title": "streamline 24/365 blockchains",
-        "social_card_description": "synthesize real-time e-business"
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
       },
       {
-        "social_card_image": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
+        "key": "contact$161e5541-84e1-4bff-bd51-48aa796dce4d",
+        "name": "contact",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default-slice",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Adult"
+                  }
+                }
+              ]
+            }
           },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&h=500&fit=crop"
-        },
-        "social_card_title": "syndicate efficient ROI",
-        "social_card_description": "utilize value-added deliverables"
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
       },
       {
-        "social_card_image": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
+        "key": "text_block$d256894a-e25d-4ccc-9860-5436848bb144",
+        "name": "text_block",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default-slice",
+          "primary": {
+            "text": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Anim ullamco proident cillum eiusmod aliqua exercitation incididunt ut in non. Lorem sit do ex quis aliqua quis aliqua et officia velit. Sint reprehenderit pariatur mollit et adipisicing veniam irure enim voluptate."
+                  }
+                }
+              ]
+            }
           },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&h=500&fit=crop"
-        },
-        "social_card_title": "brand compelling infomediaries",
-        "social_card_description": "morph interactive vortals"
-      },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "meta_title": {
+    "__TYPE__": "FieldContent",
+    "value": "quietly",
+    "type": "Text"
+  },
+  "meta_description": {
+    "__TYPE__": "FieldContent",
+    "value": "gift",
+    "type": "Text"
+  },
+  "social_cards": {
+    "__TYPE__": "GroupContentType",
+    "value": [
       {
-        "social_card_image": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
-        },
-        "social_card_title": "repurpose killer relationships",
-        "social_card_description": "transform back-end initiatives"
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "social_card_image",
+            {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055",
+                "width": 3277,
+                "height": 4092
+              },
+              "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055",
+              "width": 3277,
+              "height": 4092,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            }
+          ],
+          [
+            "social_card_title",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "increase",
+              "type": "Text"
+            }
+          ],
+          [
+            "social_card_description",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "basis",
+              "type": "Text"
+            }
+          ]
+        ]
       }
     ]
   }
