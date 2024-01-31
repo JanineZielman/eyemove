@@ -1,12 +1,12 @@
 import React from 'react'
-import { RichText } from 'prismic-reactjs'
+import { PrismicRichText } from '@prismicio/react'
 
 const Contact = ({ slice }) => (
   <section className="contact container">
     <span className="title">
       {
         slice.primary.title ?
-        <RichText render={slice.primary.title}/>
+        <PrismicRichText field={slice.primary.title}/>
         : <h2>Template slice, update me!</h2>
       }
     </span>

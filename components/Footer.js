@@ -1,5 +1,5 @@
+import { PrismicRichText } from "@prismicio/react";
 import React from "react";
-import { RichText} from "prismic-reactjs";
 
 const Footer = ({ footerData, menuLinks }) => {
   return(
@@ -7,7 +7,7 @@ const Footer = ({ footerData, menuLinks }) => {
 			<div className="columns">
 				{footerData.map((data, index) => (
 					<div className="column" key={`column-` + index}>
-						<RichText render={data.column} key={index} />
+						<PrismicRichText field={data.column}/>
 					</div>
 				))}
 			</div>
@@ -24,7 +24,7 @@ const Links = ({ menuLinks }) => {
           {menuLinks.map((menuLink, index) => (
             <li key={`menulink-${index}`}>
               <a href={menuLink.link.uid}>
-                {RichText.asText(menuLink.label)}
+                <PrismicRichText field={menuLink.label}/>
               </a>
             </li>
           ))}

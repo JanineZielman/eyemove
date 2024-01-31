@@ -23,6 +23,7 @@ h3{
 p{
   font-size: 18px;
   line-height: 1.4;
+  min-height: 10px;
 }
 
 a {
@@ -47,14 +48,26 @@ img{
   margin-top: 100px;
 }
 
-.home{
-  .two-columns:nth-child(odd){
-    background-color: #B8F2F7;
-  }
-  .container{
-    padding: 90px 0;
-  }
+.info .text-block:first-child{
+  padding-top: 14px;
 }
+
+.home .two-columns:nth-child(odd){
+  background-color: #B8F2F7;
+}
+
+.info .two-columns:nth-child(even){
+  background-color: #B8F2F7;
+}
+
+.over-mij .two-columns:nth-child(odd){
+  background-color: inherit;
+}
+
+.container{
+  padding: 90px 0;
+}
+
 
 header{
   position: fixed;
@@ -232,7 +245,7 @@ table{
   }
   .page{
     margin-top: 80px;
-    padding: 10px;
+    // padding: 10px;
   }
   .hero-txt{
     width: 95%;
@@ -241,11 +254,11 @@ table{
       font-size: 22px;
     }
   }
-  div.text-block{
+  .text-block{
     padding: 0 10px;
   }
-  .home .container{
-    padding: 45px 0px;
+  .container{
+    padding: 45px 10px;
   }
   nav{
     width: 100%;
@@ -281,7 +294,7 @@ table{
     .container{
       display: block;
       margin: auto;
-      width: 90%;
+      width: 95%;
       .column{
         width: 100%;
       }
@@ -300,7 +313,10 @@ table{
       }
     }
   }
+  .home .contact{
+    padding: 45px 0;
+  }
   .contact{
-    padding: 0;
+    padding: 24px 0;
   }
 }

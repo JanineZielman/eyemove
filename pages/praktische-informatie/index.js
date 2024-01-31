@@ -1,18 +1,17 @@
-import { SliceZone } from "@prismicio/react";
+import { PrismicRichText, SliceZone } from "@prismicio/react";
 import { components } from "../../slices";
 import * as prismicH from "@prismicio/helpers";
 import Head from "next/head";
 
 import { createClient } from "../../prismicio";
 import Layout from "../../components/Layout";
-import { RichText } from "prismic-reactjs";
 
 const InfoPage = ({infoData, menu, footer}) => {
   return (
     <Layout menu={menu} footer={footer}>
       <section className="page">
 				<div className="text-block container">
-					<RichText render={infoData.data.text}/>
+					<PrismicRichText field={infoData.data.text}/>
 					<table>
 						<tbody>
 							{infoData.data.tableRow.map((row, index) => (

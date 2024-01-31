@@ -1,12 +1,11 @@
 import React from 'react'
-import { RichText } from 'prismic-reactjs'
-import { Link } from 'prismic-reactjs'
+import { PrismicRichText } from '@prismicio/react'
 
 const TextBlock = ({ slice }) => (
   <section className="text-block container">
     {
       slice.primary.text ?
-      <RichText render={slice.primary.text}/>
+      <PrismicRichText field={slice.primary.text}/>
       : <p>start by editing this slice from inside Prismic builder!</p>
     }
   </section>

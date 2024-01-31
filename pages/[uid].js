@@ -9,7 +9,7 @@ import Layout from "../components/Layout";
 const Page = ({page, menu, footer}) => {
   return (
     <Layout menu={menu} footer={footer}>
-      <section className="page">
+      <section className={`page ${page.uid}`}>
         <SliceZone slices={page.data.slices} components={components} />
       </section>
     </Layout>
